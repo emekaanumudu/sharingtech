@@ -1,0 +1,192 @@
+/*RED COLOR: #9f0909*/
+/*dark yellow: #d4cc00
+
+very dark yellow: #b2ac00 ---*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555555;
+    font-family: 'Lato', 'arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+/*---------------HEADER-------------------------*/
+/*---------------------------------------------*/
+          
+header {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back3.jpeg);
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-button 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #9f0909;
+}
+
+.back-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back-text {
+    text-align: right;
+}
+
+.date {
+    float: right;
+    color: #fff;
+}
+
+
+
+/*---------------HEADINGS-------------------------*/
+/*---------------------------------------------*/
+
+h1 {
+    float: left;
+    color: #9f0909;
+    font-size: 100%;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    width:spacing: 1px;
+    letter-spacing: 1px;
+    font-size: 270%;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 30px;
+    letter-spacing: 1px;
+}
+
+h3:after {
+     display: block;
+    height: 2px;
+    background-color: #9f0909;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*---------------BUTTONS-------------------------*/
+/*---------------------------------------------*/
+
+.btn:link,
+.btn:visited
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #9f0909;
+    color: #ff0101;
+}    
+
+
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #b2ac00;
+}
+
+.btn-full:link, 
+.btn-full:visited {
+    background-color: #d4cc00;
+    border: #d4cc00;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #b2ac00;
+}
+
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #b2ac00;
+    color: #fff;
+}
+
+
+/*---------------PRODUCT IMAGE-------------------------*/
+/*---------------------------------------------*/
+
+figure.product {
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
+figure.blackfriday {
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 100px;
+}
+
+.blackfriday {
+    text-decoration: line-through;
+}
